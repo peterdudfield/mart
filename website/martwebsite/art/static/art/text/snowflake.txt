@@ -1,0 +1,1 @@
+The snowflake fracture is a shape with infinite perimeter but finite area. It is made by adding smaller and smaller triangles to the existing shape. It was first defined in 1904 by the Swedish mathematical Helge von Koch. 

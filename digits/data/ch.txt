@@ -1,0 +1,5 @@
+ 'name':'chi',
+ 'digits':'0660161815846869573927812110014555778432623360284733413319448423335405642304495277143760031413839867911779',
+ 'equation': ' \gamma + \int_0^x \frac{cosh(t)-1}{t}dt',
+ 'description': 'Hyperbolic cosine integral',
+ 'link': 'A133746'

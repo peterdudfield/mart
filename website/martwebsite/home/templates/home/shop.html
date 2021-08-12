@@ -1,0 +1,82 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+
+    <h1  align="center"> Shop</h1>
+ <!--<h2  align="center"> Details</h2>-->
+<div  align="center">
+    <br>
+
+        Each piece of art costs £25 and £10 of that goes to charity. Mart is supporting:  <br>
+
+</div>
+
+<div  align="center">
+<div class="w3-row shoppictures  w3-padding-small">
+
+<div class = "w3-col m6 w3-right">
+    <a href="https://www.mathsontoast.org.uk" target="_blank"> <div align="center">
+        <img src="{% static 'home/images/mathsontoast.png'%}"
+             alt="img"
+             height="100" width="100"
+             style="border:2px solid rgba(0, 0, 0, .5);">
+    </div>
+    </a>
+</div>
+  <div class = "w3-col m6 w3-left">
+<a href="https://www.redcross.org.uk" target="_blank"> <div align="center">
+        <img src="{% static 'home/images/BritishRedCross.png'%}"
+             alt="img"
+             height="100" width="100"
+             style="border:2px solid rgba(0, 0, 0, .5);">
+    </div>
+    </a>
+  </div>
+</div>
+</div>
+
+<div  align="center">
+
+
+        The art is A4 and comes framed. <br>
+
+      <a href="https://www.etsy.com/uk/shop/MathematicalArtShop" target="_blank">
+          Please follow this link to etsy to buy art </a> or click on the art work below.
+
+</div>
+
+<br>
+<!--<h2  align="center"> Art</h2>-->
+<div align="center">
+<div class="w3-row shoppictures">
+
+{% for art in all_art %}
+
+
+<!--<ul>-->
+<!--<div class = "w3-col m2 w3-center w3-padding-small">-->
+    <div class = "w3-col m4">
+<!--<div class="artimageshop" align="center">-->
+    {{ art.name }} <br>
+        <a href="{{art.shopurl}}" target="_blank">
+    <img src="{{art.file_frame.url}}" height="270"></a>
+<!--</div>-->
+</div>
+<!--</ul>-->
+{% endfor %}
+
+</div>
+</div>
+<br>
+
+
+<!--<h2  align="center"> Example</h2>-->
+<!--<div align="center">-->
+    <!--&lt;!&ndash;<p>Example of the frame art: </p>&ndash;&gt;-->
+<!--<img src="{% static 'home/images/exampleframe.jpg'%}" width="200">-->
+<!--</div>-->
+
+
+{% endblock %}
+

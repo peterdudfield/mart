@@ -1,0 +1,21 @@
+<!-- templates/email.html -->
+
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/style.css'%}">
+
+{% block body %}
+
+<h1 align="center">Contact Us</h1>
+<div  align="center">
+    For any questions or inquiries, please fill in the form below.
+</div><br>
+<form method="post"  align="center">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
+
+{% endblock %}

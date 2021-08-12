@@ -1,0 +1,5 @@
+ 'name':'\delta',
+ 'digits':466920160910299067185320382046620161725818557747576863274565134300413433021131473713868974402394801381716,
+ 'equation': '\delta = \lim_{n\rightarrow\infty}\frac{a_{n-1}-a_{n-2}}{a_{n}-a_{n-1}}',
+ 'description': 'The first Feigenbaum constant is the limiting ratio of each bifurcation ($a_n$) interval \n to the next between every period doubling',
+ 'link': 'A006890',

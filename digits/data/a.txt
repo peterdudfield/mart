@@ -1,0 +1,5 @@
+ 'name':'\alpha',
+ 'digits':250290787509589282228390287321821578638127137672714997733619205677923546317959020670329964974643383412959,
+ 'equation': '',
+ 'description': 'The second Feigenbaum constant used in fratual theory.',
+ 'link': 'A006891',

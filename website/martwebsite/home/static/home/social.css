@@ -1,0 +1,44 @@
+
+/* round sm icons */
+a, a:hover {
+    text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li{
+    margin: 3;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+    width: 30px;
+    height: 30px;
+    color: #FFF;
+    background-color: #000;
+    padding-top: 7px;
+    padding-left: 2px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+}
+
+.socialbtns .fa:hover {
+    transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+}

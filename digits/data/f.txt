@@ -1,0 +1,5 @@
+ 'name':'f',
+ 'digits':280777024202851936522150118655777293230808592093019829122005480959710088912190166551018530816819663814187,
+ 'equation': 'F = \int_0^\infty \frac{1}{\Gamma(x)} dx \quad \Gamma(x) = \int_0^\infty x^{z-1}e^{-x}dx',
+ 'description': 'Fransen Robinson constant',
+ 'link': ' A058655',

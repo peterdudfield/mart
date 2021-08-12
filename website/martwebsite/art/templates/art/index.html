@@ -1,0 +1,22 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+
+
+{% block body %}
+{% for art in all_art %}
+<!--<ul>-->
+<h3 align="center"> {{ art.name }}</h3><br>
+
+<div class="artimage" align="center">
+    <img src="{{art.file.url}}">
+    <!--height="628" width="628">-->
+    <!--align="center"-->
+    <br>
+    <div class="text" align="center">{{art.description}}</div>
+    <!--<iframe align="center" ></iframe>-->
+    <br>
+</div>
+<br>
+<!--</ul>-->
+{% endfor %}
+{% endblock %}

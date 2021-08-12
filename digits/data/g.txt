@@ -1,0 +1,5 @@
+ 'name':'\gamma',
+ 'digits':'0577215664901532860606512090082402431042159335939923598805767234884867726777664670936947063291746749',
+ 'equation':'\gamma = \lim_{n\rightarrow\infty}\left(\ln(n) - \sum_1^n\frac{1}{k}\right)',
+ 'description':'Euler Mascheroni constant',
+ 'link':'A001620 ',

@@ -1,0 +1,177 @@
+body{
+    background: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    font-family:Montserrat;
+    font-size: 20px
+}
+
+@media (max-width: 480px) {
+    .content{
+       margin-left: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .content{
+       margin-left: 10px;
+    }
+}
+
+context{
+    background: white url("images/background2.png");
+}
+
+
+.navbar{
+    border-raduis:0;
+    margin-left: 0px;
+    margin-right: 0px;
+    align: center;
+}
+.nav{
+    text-align: center;
+    border-raduis:5;
+}
+
+.navbar-nav{
+    #font-family: 'Statisfy' , cursive;
+    text-align: center;
+    border-raduis:5;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.navbar-nav .navbar-center {align: center;}
+
+/*.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    border-raduis:5;
+  }*/
+
+.navbar-inverse{background:black}
+.navbar-collapse{background:black}
+.navbar-collapse{background:black}
+.nav{background:black; align:center}
+.collapse{background:black;}
+
+
+#.navbar-collapse .navbar-center ul{
+#    display: none;
+#    background:yellow;
+#}
+
+#.navbar-collapse.navbar-center ul li:hover{
+#    display: block;
+#}
+#.navbar-collapse.navbar-center li ul:hover {
+#  display: block;
+#}
+
+
+
+.image_border{
+    border-width: 25px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+.carousel{
+    interval:700;
+    width:100%;
+    background: none;
+    background-image: none;
+}
+
+.carousel-inner img {
+  interval:500;
+  margin: auto;
+  transition-property: opacity;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  filter: progid: none !important;
+  filter:none !important;
+  background-image:none;
+  outline: 0;
+  opacity: 1;
+ }
+
+.item img {
+    top: 0;
+    left: 0;
+    width: 100%
+    border-radius: 1px
+}
+
+.carousel-inner{
+    width: 100%
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  margin: 20;
+}
+
+.carousel-controls {
+display: -ms-flexbox;
+display: flex;
+-ms-flex-pack: justify;
+justify-content: space-between;
+position: absolute;
+width: 50%;
+left: 25%;
+top: 43%;
+}
+
+.carousel-controls a {
+background-color: rgba(0, 0, 0, 0.2);
+color: rgba(255, 255, 255, 0.95);
+padding: 6px 9px;
+font-size: 20px;
+border-radius: 10px
+}
+
+.carousel-controls a:hover {
+background-color: rgba(0, 0, 0, 0.3);
+border-radius: 10px
+}
+
+@media (min-width: 0px) {
+    .item img {width: 100%}
+    .carousel-controls {
+        width: 100%;
+        left: 0%;
+        }
+    .logo img {height: 100px}
+    .artimage img {width:100%}
+    .artimage .text {width:100%}
+    .shoppictures {width:100%}
+}
+
+@media (min-width: 801px) {
+    .item img {width: 50%}
+    .carousel-controls {
+        width: 50%;
+        left: 25%;
+        }
+     .logo img {height: 200px}
+     .artimage img {width:628px}
+     .artimage .text {width:50%}
+     .container {display : flex;justify-content: center;}
+     .shoppictures {width:50%}
+}
+
+hr {
+border: 1;
+clear:both;
+display:block;
+width: 96%;
+color: #FFFF00;
+height: 1px;
+}

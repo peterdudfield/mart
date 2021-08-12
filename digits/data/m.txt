@@ -1,0 +1,5 @@
+ 'name':'\mu',
+ 'digits':261497212847642783755426838608695859051566648261199206192064213924924510897368209714142631434246651051617,
+ 'equation':'m = \mu =\sqrt{2+\sqrt{2}} = lim_{n\rightarrow\infty}c_n^{1/n}',
+ 'description':'$c_n$ is the number of self-avoiding paths of length n on a hexagonal lattice.'
+ 'link':'https://en.wikipedia.org/wiki/Connective_constant',

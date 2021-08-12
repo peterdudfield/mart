@@ -1,0 +1,5 @@
+ 'name':'\rho',
+ 'digits':132471795724474602596090885447809734073440405690173336453401505030282785124554759405469934798178728032991,
+ 'description':'Plastic number',
+ 'equation':'\rho $ is the solution of $ x^3=x+1',
+ 'link':'',

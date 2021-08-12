@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mart</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'home/style.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/social.css'%}">
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <meta name="description" content="Beautiful pictures using mathematics and computer programming. For every picture bought, £10 will go to
+    charity. Mart is currently supporting mathsontoast and the British Red Cross.">
+    <meta name="author" content="Peter Dudfield">
+    <link rel="icon" href="{% static 'home/images/mart_icon.png' %}" sizes="48x48">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="logo" align="center">
+
+    <a href="{% url 'home' %}" >
+    <img style="border:0px solid black;"
+         src="{% static 'home/images/logo.png' %}"
+         align="center"></a>
+</div>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href = "{% url 'home' %}"> Mart</a>-->
+        </div>
+
+        <div class="collapse navbar-collapse" id="topNavBar">
+            <ul class="nav navbar-nav navbar-center">
+                <li class="">
+                    <a href="{% url 'home' %}">
+                        Home
+                    </a>
+                </li>
+                <li class="">
+                    <a href="{% url 'art/index' %}">
+                        Art
+                    </a>
+                </li>
+                <li class="">
+                    <a href="{% url 'aboutus' %}">
+                        About us
+                    </a>
+                </li>
+                <li class="">
+                    <a href="{% url 'shop' %}">
+                        Shop
+                    </a>
+                </li>
+                <li class="">
+                    <a href="{% url 'email' %}">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+{% block body %}
+{% endblock %}
+
+</div>
+</body>
+
+<footer class="site-footer">
+    <br>
+    <br>
+
+    <div class="socialbtns" align="center" style="display: block;">
+        <hr>
+        &copy; Mart 2019
+
+        <!--<ul>-->
+            <li><a href="https://www.facebook.com/Mart-188890472045654" target="_blank" class="fa fa-lg fa-facebook"></a></li>
+        <li><a href="https://www.etsy.com/uk/shop/MathematicalArtShop" target="_blank" class="fa fa-lg fa-etsy"></a></li>
+        <li><a href="https://www.instagram.com/mathematicalartuk/" target="_blank" class="fa fa-lg fa-instagram"></a></li>
+        <li><a href="https://twitter.com/search?q=mart_art_uk" target="_blank" class="fa fa-lg fa-twitter"></a></li>
+        <!--</ul>-->
+    </div>
+
+</footer>
+
+
+
+</html>

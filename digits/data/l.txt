@@ -1,0 +1,4 @@
+ 'name':'\lambda',
+ 'digits':130357726903429639125709911215255189073070250465940487575486139062855088785246155712681576686442522555,
+ 'description':'Look-and-say sequence is the sequence of integers beginning as follows: \n1 11 21 1211 111221 312211 13112221 1113213211 ... \nConways constant ($\lambda$) is the infinite limit of the ratio of these terms. ',
+ 'link':'',

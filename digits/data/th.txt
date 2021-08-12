@@ -1,0 +1,5 @@
+ 'name':'\theta',
+ 'digits':130637788386308069046861449260260571291678458515671364436805375996643405376682659882150140370119739570729,
+ 'equation':'',
+ 'description':'Smallest number such that $\lfloor \Theta ^{3^n} \rfloor$ is always prime.',
+ 'link':'A051021',

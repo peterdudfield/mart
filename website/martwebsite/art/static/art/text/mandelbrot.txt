@@ -1,0 +1,1 @@
+This image contains four visualizations of the Mandelbrot set. The Mandelbrot set is a set complex numbers for which f_c(z) = z^2 + c does not diverge. The image is self-reacting and contains properties linked with chaos theory. The set was first defined and printing in 1978. 

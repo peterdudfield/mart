@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=qgGIqRFvFFk&list=PL6gx4Cwl9DGBlmzzFcLgDhKTTfNLfX1IK
+
+Pip install Django
+
+Cd to folder
+Django-admin startproject martwebsite
+
+Python manage.py runserver - to start server
+Python manage.py startapp {new_app_name} - to make new app
+Python manage.py makemigrations art - to update databases
+
+python manage.py migrate --run-syncdb
+Python manage.py shell
+From art.models import ART
+a = Art(name ='mandelbrot', image_logo='')
+
+Before uploading to aws run copy static files to static main folder

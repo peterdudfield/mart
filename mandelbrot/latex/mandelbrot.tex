@@ -1,0 +1,31 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
+%% only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+
+\usepackage{graphicx}
+
+\begin{document}
+\vspace*{\fill}
+\begin{center}
+\includegraphics[width=0.75\textwidth]{../Images/mandelbrot_4_1000.png}
+\end{center}
+\vspace*{\fill}
+
+\begin{center}
+\tiny
+This image contains four visualisations of the Mandelbrot set. The Mandelbrot set is a set complex numbers for which $f_c(z) = z^2 + c$ does not diverge. The image is self similar and contains properties linked with chaos theory. The set was first defined and printing in 1978.
+\end{center}
+
+\end{document}

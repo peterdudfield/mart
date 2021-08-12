@@ -1,0 +1,5 @@
+ 'name':'s',
+ 'digits':'220741609916247796230685674512980889023642328264937870547814167238949539368001063967447262373607087781',
+ 'equation': '\frac{2}{\pi} + \frac{\pi}{2}',
+ 'description': 'The lower limit of the moving sofar problem',
+ 'link': 'A086118',

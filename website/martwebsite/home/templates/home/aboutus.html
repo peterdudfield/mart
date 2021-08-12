@@ -1,0 +1,51 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+<h1 align="center">  About us</h1>
+
+
+ <div align="center">
+     Hi, it's Peter here and welcome to Mart. <br> I'm a mathematician and I've been having some fun with computer programming to
+     produce these art works.
+
+        <!--<h3>The Art</h3>-->
+         <!--I am making beautiful pictures using mathematics and computer programming.-->
+        <br>Each art work is uniquely composed and uses a variety of mathematical techniques.
+        <!--<br> The founder of Mart has a PhD in mathematics.-->
+    </div>
+<br>
+    <div align="center">
+        <h3>The Charity</h3>
+        For every picture bought, £10 will go to charity. Mart is currently supporting:
+    </div>
+    <br>
+    <br>
+
+
+<div align="center">
+<div class="w3-row shoppictures w3-center w3-padding-small">
+<div class = "w3-col m6 ">
+    <a href="https://www.mathsontoast.org.uk" target="_blank"> <div align="center">
+        <img src="{% static 'home/images/mathsontoast.png'%}"
+             alt="img"
+             height="150" width="150"
+             style="border:2px solid rgba(0, 0, 0, .5);">
+    </div>
+    </a>
+</div>
+  <div class = "w3-col m6">
+<a href="https://www.redcross.org.uk" target="_blank"> <div align="center">
+        <img src="{% static 'home/images/BritishRedCross.png'%}"
+             alt="img"
+             height="150" width="150"
+             style="border:2px solid rgba(0, 0, 0, .5);">
+    </div>
+    </a>
+</div>
+</div>
+</div>
+
+
+
+    {% endblock %}
