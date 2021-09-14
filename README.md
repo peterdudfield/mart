@@ -6,22 +6,24 @@ Here is some 'python' code to create mathematical art.
 
 Its not particular well written was made roughly in 2017 ish. 
 
-# mandelbrot
-
-Fun with Mandelbrot set
-
-![Mandelbrot](./mandelbrot/Images/mart_mandelbrot_preview.svg)
-
 
 # circles
 
-TODO
+![Paper](./circle/Images/example.png)
+
 
 # digits
 
 Fun with the MNist data set
 
 ![Paper](./digits/images/example_e.png)
+
+# mandelbrot
+
+Fun with Mandelbrot set
+
+![Mandelbrot](./mandelbrot/Images/mart_mandelbrot_preview.svg)
+
 
 # paper
 
