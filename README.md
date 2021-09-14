@@ -4,19 +4,17 @@ Mathematical art = Mart
 
 Here is some 'python' code to create mathematical art. 
 
-Its not particular well written was made roughly in 2017 ish. 
-
+Its not particular well written was made roughly in 2017 ish.
 
 # circles
 
-![Paper](./circle/Images/example.png)
-
+<img src="./circle/Images/example.png" width="200" height="200" />
 
 # digits
 
 Fun with the MNist data set
 
-![Paper](./digits/images/example_e.png)
+![Digits](./digits/images/example_e.png)
 
 # mandelbrot
 
