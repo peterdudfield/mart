@@ -33,6 +33,10 @@ Fun with Dragon fractal
 
 ![squares_triangles](./squares_triangles/Images/summer_winter.svg)
 
+# tree
+
+![Paper](./tree/Images/example.png)
+
 # website
 
 Simple django app for the website (no longer running)

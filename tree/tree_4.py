@@ -142,4 +142,4 @@ make_tree(np.pi / 4 * 1.2, np.pi / 4 * 1.1, 0.4, 0.8, 1.5, N_layers=min_N_layers
 
 plt.tight_layout(pad=5, w_pad=5, h_pad=5)
 
-plt.savefig("tree_4.png", dpi=250)
+plt.savefig("Images/tree_4.png", dpi=250)
