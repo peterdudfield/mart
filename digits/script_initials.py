@@ -6,16 +6,10 @@ Created on Sat Feb 17 20:27:32 2018
 """
 import matplotlib.pyplot as plt
 
-from utils.digits import Digits
+from digits.utils.digits import Digits
 
-name = ["Ian", "Edward", "Dudfield"]
-initials = "ied"
-
-name = ["Katie", "Meads"]
-initials = "km"
-#
-name = ["Hannah", "Corry"]
-initials = "hc"
+name = ["Peter", "Dudfield"]
+initials = "pd"
 
 add_equation = True
 add_description = True

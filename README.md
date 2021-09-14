@@ -19,7 +19,9 @@ TODO
 
 # digits
 
- TODO
+Fun with the MNist data set
+
+![Paper](./digits/images/example_e.png)
 
 # paper
 

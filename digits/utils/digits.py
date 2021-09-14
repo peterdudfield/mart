@@ -15,6 +15,7 @@ script to make picture fom digitis of pi
 # from mpmath import mp
 # import pidigits
 import numpy as np
+import os
 import matplotlib.pyplot as plt
 
 # from PIL import Image
@@ -47,7 +48,8 @@ colors["8"] = (255, mm, m)
 colors["9"] = (m, m, m)
 
 #
-mndata = MNIST("MNIST")
+local_folder = f"{os.path.dirname(os.path.realpath(__file__))}/../MNIST"
+mndata = MNIST(local_folder)
 mndata.gz = True
 images, labels = mndata.load_testing()
 # mndata.load_testing()

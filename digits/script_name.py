@@ -8,19 +8,8 @@ import matplotlib.pyplot as plt
 
 from utils.digits import Digits
 
+name = 'peter'
 
-# name = ['mu','m']
-name = "krasi"
-# name = 'florin'
-# name = 'eva'
-# name = ['ch','a','r','i']
-# name = 'pablo'
-# name = 'ian'
-# name = ['th','o','m','a','s']
-# name = 'milli'
-# name = 'tom'
-# name = 'peter'
-# name = ['phi','l']
 
 add_equation = True
 add_description = True
