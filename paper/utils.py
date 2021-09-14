@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-class Dragon():
-
+class Dragon:
     def run(self, L=0.9, N=7):
 
         lines = []
@@ -18,7 +17,7 @@ class Dragon():
 
         for i in range(0, self.N):
 
-            print('Making new lines ' + str(i))
+            print("Making new lines " + str(i))
             new_lines = self.lines.copy()
             n = len(self.lines)
             for i in range(0, len(self.lines)):
@@ -29,7 +28,7 @@ class Dragon():
             lines = new_lines.copy()
             self.lines = self.move_lines(lines)
 
-        print('Plotting lines')
+        print("Plotting lines")
         self.plot_lines(lines)
 
     def r90(self, line, m):
@@ -42,7 +41,6 @@ class Dragon():
         x1_1, y1_1, x2_1, y2_1, n_1 = line1
         x1_2, y1_2, x2_2, y2_2, n_2 = line2
         L = self.L
-
 
         # end of first line eqauls start of second line
         if x2_1 == x1_2 and y2_1 == y1_2:
@@ -100,12 +98,11 @@ class Dragon():
             x1_1, y1_1, x2_1, y2_1, n = line1
             x1, y1, x2, y2, n = line_new
 
-
             c = [i / len(lines), 0, 0]
 
             if i < len(lines) - 1:
-                plt.plot([x1, x2], [y1, y2], color=c,solid_capstyle='round',lw=2)
-            plt.plot([x1_1, x2_1], [y1_1, y2_1], color=c,solid_capstyle='round',lw=2)
+                plt.plot([x1, x2], [y1, y2], color=c, solid_capstyle="round", lw=2)
+            plt.plot([x1_1, x2_1], [y1_1, y2_1], color=c, solid_capstyle="round", lw=2)
 
     def move_lines(self, lines):
         min_x = 1

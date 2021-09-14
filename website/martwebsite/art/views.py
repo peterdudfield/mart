@@ -3,11 +3,11 @@ from .models import Art
 
 
 class IndexView(generic.ListView):
-    template_name = 'art/index.html'
-    context_object_name = 'all_art'
+    template_name = "art/index.html"
+    context_object_name = "all_art"
 
     def get_queryset(self):
-        print('here')
+        print("here")
         return Art.objects.all()
 
 

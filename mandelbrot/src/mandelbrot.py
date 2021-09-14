@@ -4,8 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import PIL.Image as Image
 
+
 def f(z, c, r):
-    y = (z ** (2 + r) + c)
+    y = z ** (2 + r) + c
     return y
 
 
@@ -72,14 +73,14 @@ def mandelbrot_zoom(xlim, ylim, sub_plot_idx=0, N=500, s=None, NN=100):
             # logic_map[i,N-j-1]=k_save
 
             if (i * N + j) / N / N * 100 % 1 == 0:
-                print(str((i * N + j) / N / N * 100) + '%', end='\r')
+                print(str((i * N + j) / N / N * 100) + "%", end="\r")
 
-    img = Image.fromarray(256 - logic_map * 256 / (NN-1))
+    img = Image.fromarray(256 - logic_map * 256 / (NN - 1))
 
     return img
 
 
-def rotate_flip(img, rotate=0, flip_v=False,flip_h=False):
+def rotate_flip(img, rotate=0, flip_v=False, flip_h=False):
 
     # print('Rotate: ' + str(rotate))
     # print('flip_v: ' + str(flip_v))
@@ -97,14 +98,14 @@ def rotate_flip(img, rotate=0, flip_v=False,flip_h=False):
     return img
 
 
-def plot_sub(img, n, fig, rotate=0, flip_v=False,flip_h=False):
+def plot_sub(img, n, fig, rotate=0, flip_v=False, flip_h=False):
 
     ax = fig.add_subplot(220 + n)
     plt.imshow(img)
     plt.xticks([])
     plt.yticks([])
 
-    ax.spines['bottom'].set_color('white')
-    ax.spines['top'].set_color('white')
-    ax.spines['left'].set_color('white')
-    ax.spines['right'].set_color('white')
+    ax.spines["bottom"].set_color("white")
+    ax.spines["top"].set_color("white")
+    ax.spines["left"].set_color("white")
+    ax.spines["right"].set_color("white")

@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('art', '0005_art_shopurl'),
+        ("art", "0005_art_shopurl"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='art',
-            name='image_logo',
+            model_name="art",
+            name="image_logo",
         ),
         migrations.AddField(
-            model_name='art',
-            name='file_frame',
-            field=models.FileField(default='default', upload_to=''),
+            model_name="art",
+            name="file_frame",
+            field=models.FileField(default="default", upload_to=""),
             preserve_default=False,
         ),
     ]

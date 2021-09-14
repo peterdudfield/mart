@@ -6,13 +6,15 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('art', '0004_auto_20180916_1751'),
+        ("art", "0004_auto_20180916_1751"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='art',
-            name='shopurl',
-            field=models.CharField(default='https://www.etsy.com/uk/shop/MathematicalArtShop', max_length=250),
+            model_name="art",
+            name="shopurl",
+            field=models.CharField(
+                default="https://www.etsy.com/uk/shop/MathematicalArtShop", max_length=250
+            ),
         ),
     ]

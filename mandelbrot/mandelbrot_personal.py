@@ -17,47 +17,44 @@ from PIL import ImageDraw
 from mandelbrot import mandelbrot_zoom, plot_sub
 
 
-z= complex(-1,0)
+z = complex(-1, 0)
 
-ylim = [-2,2]
-xlim = [-2.25,1.75]
+ylim = [-2, 2]
+xlim = [-2.25, 1.75]
 
-ylim = [-2,2]
-xlim = [-2.5,1.5]
+ylim = [-2, 2]
+xlim = [-2.5, 1.5]
 
-N=512
+N = 512
 NN = 100
 
-dx = xlim[1]/N-xlim[0]/N
-dy = ylim[1]/N-ylim[0]/N
+dx = xlim[1] / N - xlim[0] / N
+dy = ylim[1] / N - ylim[0] / N
 
-xlist =[]
+xlist = []
 ylist = []
 
-s = '1988-10-02'
+s = "1988-10-02"
 seed = 1
 for letter in s:
-    seed = seed*ord(letter) % 2**32
+    seed = seed * ord(letter) % 2 ** 32
 
 np.random.seed(seed)
 
-r = np.random.uniform(0,5)
-print(r,seed)
+r = np.random.uniform(0, 5)
+print(r, seed)
 
 now = datetime.now().strftime("_%Y-%m-%d_%H_%M_%S")
 
-img = mandelbrot_zoom(xlim=xlim,ylim=ylim,N=N,s=s,NN=NN)
+img = mandelbrot_zoom(xlim=xlim, ylim=ylim, N=N, s=s, NN=NN)
 
 # img = Image.fromarray(256-logic_map*256/NN)
 # img.show()
-img = img.convert('RGB')
+img = img.convert("RGB")
 
 draw = ImageDraw.Draw(img)
 font_path = "/Users/admin/Library/Fonts/InputSans-Regular.ttf"
 # font = ImageFont.truetype(font_path, 20)
-draw.text((230, 50),s,(0,0,0))
+draw.text((230, 50), s, (0, 0, 0))
 
-img.save("Images/" + s + "_mandelbrot_"+str(N)+"_"+now + ".png")
-
-         
-    
+img.save("Images/" + s + "_mandelbrot_" + str(N) + "_" + now + ".png")

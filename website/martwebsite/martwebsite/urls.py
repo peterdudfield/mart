@@ -21,10 +21,10 @@ from django.conf.urls.static import static
 import home
 
 urlpatterns = [
-    path(r'', include('home.urls')),
-    path(r'art/', include('art.urls')),
-    path(r'contact/', include('contact.urls')),
-    path('admin/', admin.site.urls),
+    path(r"", include("home.urls")),
+    path(r"art/", include("art.urls")),
+    path(r"contact/", include("contact.urls")),
+    path("admin/", admin.site.urls),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
@@ -33,9 +33,7 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 handler404 = home.views.error_404
 
 
-
-
 from django.views.static import serve
 
-urlpatterns +=url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
-urlpatterns +=url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
+urlpatterns += (url(r"^media/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT}),)
+urlpatterns += (url(r"^static/(?P<path>.*)$", serve, {"document_root": settings.STATIC_ROOT}),)
