@@ -20,22 +20,21 @@ Fun with the MNist data set
 
 Fun with Mandelbrot set
 
-![Mandelbrot](./mandelbrot/Images/mart_mandelbrot_preview.svg)
-
+<img src="./mandelbrot/Images/mart_mandelbrot_preview.svg" width="200" />
 
 # paper
 
 Fun with Dragon fractal
 
-![Paper](./paper/Images/example.png)
+<img src="./paper/Images/example.png" width="200" />
 
 # squares and triangles
 
-![squares_triangles](./squares_triangles/Images/summer_winter.svg)
+<img src="./squares_triangles/Images/summer_winter.svg" width="200" />
 
 # tree
 
-![Paper](./tree/Images/example.png)
+<img src="./tree/Images/example.png" width="200" />
 
 # website
 
