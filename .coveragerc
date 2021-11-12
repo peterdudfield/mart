@@ -1,7 +1,9 @@
 [run]
 omit =
     digits/tests/*
+    paper/tests/*
     mandelbrot/tests/*
 include =
     digits/src/*
+    paper/src/*
     mandelbrot/src/*
