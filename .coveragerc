@@ -3,7 +3,9 @@ omit =
     digits/tests/*
     paper/tests/*
     mandelbrot/tests/*
+    tree/tests/*
 include =
     digits/src/*
     paper/src/*
     mandelbrot/src/*
+    tree/src/*
