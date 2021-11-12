@@ -5,7 +5,7 @@ Created on Sat Feb 17 20:27:32 2018
 @author: DUDFI00P
 """
 import matplotlib.pyplot as plt
-from utils.digits import Digits
+from digits.src.digits import Digits
 
 letters = ["a", "c", "d", "e", "f", "g", "i", "l", "o", ["phi"], "p", "r"]
 for letter in letters:

@@ -1,3 +1,7 @@
 [run]
-omit = mandelbrot/tests/*
-include = mandelbrot/src/*
+omit =
+    digits/tests/*
+    mandelbrot/tests/*
+include =
+    digits/src/*
+    mandelbrot/src/*

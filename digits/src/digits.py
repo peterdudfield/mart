@@ -14,6 +14,8 @@ script to make picture fom digitis of pi
 
 # from mpmath import mp
 # import pidigits
+import digits
+from pathlib import Path
 import numpy as np
 import os
 import matplotlib.pyplot as plt
@@ -70,7 +72,10 @@ class Digits:
         self.letter = letter
 
         results = "{"
-        with open("data/" + letter + ".txt", newline="") as inputfile:
+
+        path = Path(digits.__file__).parent
+
+        with open(f"{path}/data/{letter}.txt", newline="") as inputfile:
             for row in csv.reader(inputfile):
                 results = results + row[0] + ","
         # results = results[0:31] +' \'}'
@@ -266,10 +271,11 @@ class Digits:
         ax1.spines["left"].set_color("white")
 
         # if filename==None:
+        path = Path(digits.__file__).parent
         if add_text:
-            filename = "images/" + now + "-" + self.fullname + "_notext.png"
+            filename = f"{path}/images/" + now + "-" + self.fullname + "_notext.png"
         else:
-            filename = "images/" + now + "-" + self.fullname + ".png"
+            filename = f"{path}/images/" + now + "-" + self.fullname + ".png"
 
         if save_fig == 1:
             print(filename)

@@ -6,7 +6,7 @@ Created on Sat Feb 17 20:27:32 2018
 """
 import matplotlib.pyplot as plt
 
-from digits.utils.digits import Digits
+from digits.src.digits import Digits
 
 name = ["Peter", "Dudfield"]
 initials = "pd"
