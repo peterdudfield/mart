@@ -1,5 +1,3 @@
-
-
 from mandelbrot.src.mandelbrot import mandelbrot_zoom, plot_sub
 
 

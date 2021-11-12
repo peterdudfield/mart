@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 from utils.digits import Digits
 
-name = 'peter'
+name = "peter"
 
 
 add_equation = True

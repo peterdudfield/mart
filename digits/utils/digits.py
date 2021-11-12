@@ -223,7 +223,7 @@ class Digits:
 
             print(letter_latex)
             plt.text(
-                self.cols / 2 * 28 - len(name) * 20 / 2 + drift,
+                self.cols / 2 * 28 - len(name) * 18 / 2 + drift,
                 -5,
                 name[1:],
                 fontsize=60,

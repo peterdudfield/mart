@@ -99,7 +99,6 @@ def mandelbrot_zoom(
             # This is useful for creating some shading on the image
             logic_map[i, j] = k_save
 
-
             if (i * N + j) / N / N * 100 % 1 == 0:
                 print(str((i * N + j) / N / N * 100) + "%", end="\r")
 

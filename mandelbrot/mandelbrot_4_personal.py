@@ -106,9 +106,9 @@ for name in names:
     plt.text(N / 3, N * 1.1, r"$\mathcal{M} \alpha r \tau$ " + datetime.now().strftime(" %Y-%m-%d"))
     fig.suptitle(orginial_s)
     plt.savefig(filename_preview, dpi=250)
-    watermark_with_transparency(
-        filename_preview, filename_preview, "Images/preview/preview.png", position=(300, 300)
-    )
+    # watermark_with_transparency(
+    #     filename_preview, filename_preview, "Images/preview/preview.png", position=(300, 300)
+    # )
     # img = img.convert('RGB'0
 
     plt.close()
