@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 
 
 def make_tree(Theta1, Theta2, L_d, R_d, size, ax, scalefactor=2, N_layers=6):
-    # first triangles
+    # first tree
     # print('Making first points')
     first_points = [[0, 0], [0, 1]]
     lines = [first_points]
@@ -14,7 +14,7 @@ def make_tree(Theta1, Theta2, L_d, R_d, size, ax, scalefactor=2, N_layers=6):
         lines = make_lines(str(i + 2), lines, i, L_d, R_d, Theta1, Theta2, scalefactor)
         lines_layer.append(lines)
 
-    # add traingles to plot
+    # add lines to plot
     for i in range(N_layers + 1):
         print("Adding lines to plot:" + str(i))
         j = 1
